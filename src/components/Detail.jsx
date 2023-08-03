@@ -9,7 +9,7 @@ export const Detail = () => {
 
   return (
     <p className="text-center" style={{ color: theme.fgColor }}>
-      {lang.detail.lightActivated}  
+      {theme.name === "dark" ? lang.detail.darkActivated : lang.detail.lightActivated}  
     </p>
   );
 };
